@@ -1,0 +1,16 @@
+# API Framework
+fastapi
+
+# ASGI Server for FastAPI
+uvicorn[standard]
+
+# Hugging Face AI Libraries
+transformers
+torch
+accelerate
+huggingface-hub
+
+# Code Quality & Testing (as per challenge guidelines)
+black
+ruff
+pytest
