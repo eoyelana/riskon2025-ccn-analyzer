@@ -1,0 +1,47 @@
+===================================================================
+Standard Python Ignore Rules
+===================================================================
+Byte-compiled / optimized files
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+C extensions
+*.so
+
+Distribution / packaging
+build/
+dist/
+eggs/
+*.egg-info/
+*.egg
+
+Virtual Environments
+.env
+.venv
+venv/
+env/
+
+===================================================================
+IDE and Editor specific files
+===================================================================
+VS Code
+.vscode/
+
+PyCharm
+.idea/
+
+macOS
+.DS_Store
+
+===================================================================
+Project Specific Files to Ignore (CRITICAL)
+===================================================================
+Ignore the large, downloaded local model files
+gemma-2b-it-local/
+
+Ignore any model files if they are in the root
+*.bin
+*.safetensors
+
