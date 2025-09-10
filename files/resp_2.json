@@ -1,0 +1,30 @@
+{
+  "sme_judgement": "Needs Improvement",
+  "sme_comments": [
+    "The CCN is missing key details to fully assess the interaction and potential solicitation risk. More information is needed on the 'Why' (client's rationale for the investment decision) and 'Who' (specific participants and their roles)."
+  ],
+  "completeness": {
+    "who": "Partially complete",
+    "what": "Complete",
+    "why": "Missing",
+    "where": "Complete",
+    "when": "Missing"
+  },
+  "ccn_type": "Investment Product Recommendation",
+  "possible_solicitation": {
+    "value": false,
+    "reason": "The client explicitly requested to purchase the US Treasury notes, indicating this was a reverse solicitation scenario.",
+    "rm_next_action": "Ensure the client's request and understanding of the product risks are clearly documented in the CCN."
+  },
+  "missing_info": [
+    "Date and time of the interaction",
+    "Specific participants and their roles (e.g. AH, RM)",
+    "Rationale for the client's investment decision"
+  ],
+  "follow_up_questions": [
+    "What was the client's specific investment objective or need that led to this request?",
+    "Were there any alternative products or strategies discussed, and if so, what was the client's reasoning for selecting this particular investment?",
+    "Did the RM provide any specific risk disclosures related to US Treasury notes, and did the client acknowledge understanding those risks?"
+  ],
+  "suggested_ccn": "On [DATE] at [TIME], [AH NAME] ([AH]) contacted [RM NAME] ([RM]) via phone to discuss an investment recommendation. [AH] requested to purchase USD 1.5 million of 4 1/8% Notes America 2024 maturing on 31-Oct-2026. [RM] confirmed that [AH] was aware of the risks associated with US Treasury notes and had been educated on those risks. [RM] should document [AH]'s specific investment objective or need that led to this request, as well as any alternative products or strategies that were discussed and the client's rationale for selecting this particular investment. [RM] should also confirm that the relevant risk disclosures were provided and acknowledged by [AH].[ADD RATIONALE HERE]"
+}

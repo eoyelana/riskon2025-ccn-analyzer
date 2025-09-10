@@ -1,0 +1,23 @@
+{
+  "sme_judgement": "Acceptable",
+  "sme_comments": [],
+  "completeness": {
+    "who": "Complete",
+    "what": "Complete",
+    "why": "Complete",
+    "where": "Partially complete",
+    "when": "Complete"
+  },
+  "ccn_type": "Portfolio Review",
+  "possible_solicitation": {
+    "value": false,
+    "reason": "",
+    "rm_next_action": ""
+  },
+  "missing_info": [
+    "Where (city/country)"
+  ],
+  "follow_up_questions": [],
+  "suggested_ccn": "[ADD CITY/COUNTRY WHERE MEETING TOOK PLACE] - ContactType: Meeting, InitiatedBy: Account Holder, CrossBorderActivity: No, Subject: Advisory Session, Comment: [ADD CLIENT NAME] meeting with client and prospective BO. Client would like to sell underperforming investments and increase allocation to blue chips. Placed order to sell BB Biotech, Polar Fund and BB Digital Health Fund. Placed order to buy UBS Strategy Fund Growth Sustainable EUR and UBS Strategy Fund Growth Sustainable CHF. Client and family are doing well, considering pursuing a doctorate degree. Client's father will turn 70 on Saturday.",
+  "final_ccn": "ContactType: Meeting, InitiatedBy: Account Holder, CrossBorderActivity: No, Subject: Advisory Session, Comment: Kundenmeeting mit Kundin und bev. BO. Kundin moechte schlecht laufende Anlagen veräussern und mehr auf Blue Chips setzen. Gibt Auftrag zum Verkauf von Aktie BB Biotech, Polar Fund und BB Digital Health Fund. Gibt Auftrag zum Kauf von UBS Strategy Fund Growth Sustainable EUR sowie für UBS Strategy Fund Growth Sustainable CHF. Kundin und Familie geht es gut, überlegt sich, noch einen Doktor zu machen. Bev. Vater wird am Samstag 70 Jahre alt."
+}

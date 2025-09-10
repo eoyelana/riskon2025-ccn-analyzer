@@ -1,0 +1,31 @@
+{
+  "sme_judgement": "Needs Improvement",
+  "sme_comments": [
+    "The Client Contact Note (CCN) is missing key details required for a complete and compliant record. Several of the Five Ws are incomplete or missing, and there is no information on the decision rationale or reverse solicitation risks."
+  ],
+  "completeness": {
+    "who": "Partially complete",
+    "what": "Partially complete",
+    "why": "Missing",
+    "where": "Partially complete",
+    "when": "Missing"
+  },
+  "ccn_type": "Investment Product Recommendation",
+  "possible_solicitation": {
+    "value": true,
+    "reason": "The CCN does not specify whether the advisory session was at the client's exclusive request or in response to RM solicitation. Cross-border activity is indicated, which increases the risk of reverse solicitation.",
+    "rm_next_action": "The RM should document the client's explicit request for the advisory session, including the specific investment topics discussed, any recommendations made, and the client's rationale for accepting the advice. This will help determine if the interaction was permissible under reverse solicitation rules."
+  },
+  "missing_info": [
+    "Participants and their roles (e.g., AH, RM, IA, PM)",
+    "Detailed topics discussed during the advisory session",
+    "Client's rationale for decisions or accepting any risks",
+    "Date and time of the interaction"
+  ],
+  "follow_up_questions": [
+    "What were the specific investment topics discussed during the advisory session?",
+    "Did the client request the advisory session, or was it in response to RM solicitation?",
+    "What were the client's reasons for accepting the investment advice or recommendations?"
+  ],
+  "suggested_ccn": "On [ADD DATE AND TIME], [ADD PARTICIPANT NAMES AND ROLES] had a phone call to discuss [ADD SPECIFIC INVESTMENT TOPICS]. The client requested this advisory session to [ADD CLIENT'S RATIONALE AND DECISION-MAKING PROCESS]. [ADD WHETHER THE SESSION WAS AT THE CLIENT'S EXCLUSIVE REQUEST OR IN RESPONSE TO RM SOLICITATION, AND EXPLAIN REVERSE SOLICITATION RISK MITIGATION]."
+}

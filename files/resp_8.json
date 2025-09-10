@@ -1,0 +1,30 @@
+{
+  "sme_judgement": "Needs Improvement",
+  "sme_comments": [
+    "The CCN is missing key details around the 'why' and 'how' of the decisions made. More information is needed on the client's rationale and the RM's risk disclosure/discussion."
+  ],
+  "completeness": {
+    "who": "Complete",
+    "what": "Complete",
+    "why": "Partially complete",
+    "where": "Complete",
+    "when": "Complete"
+  },
+  "ccn_type": "Investment Product Recommendation",
+  "possible_solicitation": {
+    "value": true,
+    "reason": "The client instructed the RM to buy a specific investment product, which could indicate reverse solicitation. More details are needed on how this recommendation originated.",
+    "rm_next_action": "Obtain written confirmation from the client that this investment was requested on their own initiative, without any prior solicitation from the RM. Document the client's rationale and risk awareness."
+  },
+  "missing_info": [
+    "Rationale for the client's decision to invest in the JB Funds Special Value and FIDUZ products",
+    "Any risk disclosures or discussions the RM had with the client",
+    "Confirmation that the client is aware of the concentrated equity position in their portfolio"
+  ],
+  "follow_up_questions": [
+    "What was the client's rationale for selecting the JB Funds Special Value and FIDUZ products?",
+    "What risks did the RM discuss with the client regarding these investments and the overall portfolio concentration?",
+    "Does the client understand the risks associated with their current portfolio allocation and the new investments?"
+  ],
+  "suggested_ccn": "The client, [ADD NAME AND ROLE], called and instructed me to buy the JB Funds Special Value for $100,000 USD and place $120,000 USD in FIDUZ for 3 months. [ADD RATIONALE HERE] I did not provide any advice to the customer except mentioning that she is currently heavily invested in stocks. [ADD RISK DISCLOSURES AND DISCUSSION HERE] The client responded that we can review the portfolio again after the summer holidays."
+}

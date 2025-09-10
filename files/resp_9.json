@@ -1,0 +1,29 @@
+{
+  "sme_judgement": "Needs Improvement",
+  "sme_comments": [
+    "The CCN is missing key details to fully assess the interaction and potential solicitation risk. More information is needed on the 'why' and 'how the decision came to be'."
+  ],
+  "completeness": {
+    "who": "Partially complete",
+    "what": "Complete",
+    "why": "Partially complete",
+    "where": "Complete",
+    "when": "Partially complete"
+  },
+  "ccn_type": "Investment Product Recommendation",
+  "possible_solicitation": {
+    "value": false,
+    "reason": "The client explicitly requested the trade, so this appears to be a reverse solicitation scenario.",
+    "rm_next_action": "Ensure the client's request and rationale are documented in the suggested CCN."
+  },
+  "missing_info": [
+    "Specific date and time of the phone call",
+    "Full name and role of the Authorized Signatory",
+    "Rationale and decision-making process behind the client's trade request (e.g. investment objective, risk tolerance, portfolio fit)"
+  ],
+  "follow_up_questions": [
+    "What was the client's specific investment objective or rationale for the Dow Chemical trade?",
+    "Were any alternative investment options or risk disclosures discussed with the client?"
+  ],
+  "suggested_ccn": "On [DATE] at [TIME], I received a phone call from [FULL NAME AND ROLE OF AUTHORIZED SIGNATORY] instructing me to proceed with purchasing 20,000 shares of Dow Chemical at market price. [ADD RATIONALE HERE] The client confirmed this was a non-advised, execution-only trade request. I executed the trade as per the client's instructions."
+}
