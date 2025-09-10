@@ -5,12 +5,12 @@ fastapi
 uvicorn[standard]
 
 # Hugging Face AI Libraries
-transformers
-torch
-accelerate
-huggingface-hub
+anthropic
 
 # Code Quality & Testing (as per challenge guidelines)
 black
 ruff
 pytest
+
+# Environment variables
+python-dotenv
