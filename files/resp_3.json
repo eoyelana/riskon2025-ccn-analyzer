@@ -1,0 +1,32 @@
+{
+  "sme_judgement": "Needs Improvement",
+  "sme_comments": [
+    "The Client Contact Note (CCN) is missing key details required for a complete and compliant record. Several of the Five Ws are incomplete or missing, and the rationale/decision-making process is not documented."
+  ],
+  "completeness": {
+    "who": "Partially complete",
+    "what": "Partially complete",
+    "why": "Missing",
+    "where": "Partially complete",
+    "when": "Missing"
+  },
+  "ccn_type": "Portfolio Review",
+  "possible_solicitation": {
+    "value": false,
+    "reason": "The note indicates the meeting was initiated by the Account Holder, which suggests Reverse Solicitation.",
+    "rm_next_action": "Confirm the client's request for the advisory session and document the specific services/actions discussed and agreed upon."
+  },
+  "missing_info": [
+    "The names and roles of all participants (e.g., Account Holder, RM, etc.)",
+    "The specific operations/decisions agreed upon during the meeting",
+    "The rationale and client's understanding for the agreed actions",
+    "The date and time of the meeting"
+  ],
+  "follow_up_questions": [
+    "Who were the participants in the meeting (names and roles)?",
+    "What were the specific operations/decisions agreed upon during the meeting?",
+    "What was the client's rationale and understanding for the agreed actions?",
+    "When did the meeting take place (date and time)?"
+  ],
+  "suggested_ccn": "On [DATE] at [TIME], a meeting was held at our offices between [NAME] (Account Holder) and [NAME] (Relationship Manager). The purpose of the meeting was to conduct an advisory session, during which the following operations were discussed and agreed upon: [OPERATIONS/DECISIONS]. The client's rationale and understanding for these agreed actions was: [RATIONALE]. The meeting was initiated by the client, and no cross-border activity was involved."
+}

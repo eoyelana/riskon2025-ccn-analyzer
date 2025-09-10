@@ -1,0 +1,30 @@
+{
+  "sme_judgement": "Needs Improvement",
+  "sme_comments": [
+    "The note is missing key details to fully assess the interaction, such as the client's rationale for the investment decision, the RM's recommendation and risk disclosure, and confirmation that the request was initiated by the client (Reverse Solicitation)."
+  ],
+  "completeness": {
+    "who": "Partially complete",
+    "what": "Complete",
+    "why": "Missing",
+    "where": "Complete",
+    "when": "Complete"
+  },
+  "ccn_type": "Investment Product Recommendation",
+  "possible_solicitation": {
+    "value": true,
+    "reason": "The note does not explicitly state that the client requested the investment recommendation, so it is unclear if this was a Reverse Solicitation interaction or if the RM proactively proposed the investment.",
+    "rm_next_action": "The RM should document the client's rationale for the investment decision, confirm that the request was initiated by the client, and record any risk disclosures provided."
+  },
+  "missing_info": [
+    "Client's rationale for the investment decision",
+    "RM's recommendation and risk disclosures provided to the client",
+    "Confirmation that the request was initiated by the client (Reverse Solicitation)"
+  ],
+  "follow_up_questions": [
+    "What was the client's rationale for requesting the purchase of the MPS shares?",
+    "What risks did the RM discuss with the client regarding this investment?",
+    "Did the client explicitly request this investment recommendation, or did the RM proactively propose it?"
+  ],
+  "suggested_ccn": "On [DATE] at [TIME], I spoke with [CLIENT NAME] ([ROLE]) via telephone. The client requested to purchase EUR 70,000 worth of Monte Paschi di Siena shares, with a limit price of EUR 6.30 per share, valid for the day. [ADD RATIONALE HERE] I provided the following risk disclosures to the client: [ADD RISK DISCLOSURES HERE]. The client confirmed their understanding and decision to proceed with the trade. [CONFIRM IF THIS WAS A REVERSE SOLICITATION OR IF THE RM PROACTIVELY RECOMMENDED THE INVESTMENT]."
+}

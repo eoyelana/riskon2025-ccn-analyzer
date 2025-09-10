@@ -1,0 +1,32 @@
+{
+  "sme_judgement": "Needs Improvement",
+  "sme_comments": [
+    "The CCN is missing key information to fully assess completeness, quality, and reverse solicitation risks. Additional details are required."
+  ],
+  "completeness": {
+    "who": "Partially complete",
+    "what": "Partially complete",
+    "why": "Missing",
+    "where": "Partially complete",
+    "when": "Missing"
+  },
+  "ccn_type": "Portfolio Review",
+  "possible_solicitation": {
+    "value": true,
+    "reason": "The CCN does not clearly indicate whether the portfolio review and any potential recommendations were at the client's exclusive request or in response to RM solicitation. More details are needed.",
+    "rm_next_action": "Obtain confirmation from the client that this portfolio review was requested exclusively by them, with no prior RM solicitation. Document this clearly in the CCN."
+  },
+  "missing_info": [
+    "Participants and their roles (e.g., AH, POA, RM, IA, PM)",
+    "Purpose of the interaction and the client's rationale for decisions/accepting risk",
+    "Date and time of the interaction",
+    "Whether the client requested any new services/products during this interaction"
+  ],
+  "follow_up_questions": [
+    "What was the purpose of this portfolio review session?",
+    "How did the client come to request this portfolio review (was it their exclusive initiative or in response to RM solicitation)?",
+    "What was the client's rationale for the investment decisions discussed (e.g., accepting concentration risk)?",
+    "Were any new services or products requested by the client during this interaction?"
+  ],
+  "suggested_ccn": "A portfolio review session was conducted on [ADD DATE] at [ADD TIME] via [ADD COMMUNICATION CHANNEL] between the [ADD PARTICIPANTS AND ROLES]. The purpose of this interaction was [ADD PURPOSE AND RATIONALE]. The client's investment portfolio was reviewed, including the following positions: [ADD INVESTMENT DETAILS]. [ADD RATIONALE FOR INVESTMENT DECISIONS AND CLIENT'S VIEWS]. [IF ANY NEW SERVICES/PRODUCTS WERE REQUESTED, ADD: At the client's exclusive request, we discussed and provided information on [ADD NEW SERVICES/PRODUCTS].]"
+}
