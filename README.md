@@ -1,6 +1,6 @@
 # RiskON 2025: AI-Powered Client Contact Note Analyzer
 
-A proof-of-concept solution for the **Julius Baer RiskON 2025 Challenge**. This project leverages AI-powered language models to provide real-time quality assurance for manually created Client Contact Notes (CCNs). While the solution is flexible and can work with various LLM providers, we have implemented it using **Perplexity's Sonar API** due to its availability and ease of access for personal use and testing.
+A proof-of-concept solution for the **Julius Baer RiskON 2025 Challenge**. This project uses AI-powered language models to provide real-time quality assurance for manually created Client Contact Notes (CCNs). While the solution is flexible and can work with various LLM providers, we have implemented it using **Perplexity's Sonar API** due to its availability and ease of access for personal use and testing.
 
 <p align="center">
   <img src="./assets/licensed-image.jpeg" alt="AI Contact Note Analyzer Banner" width="600" heignt="300">
@@ -9,7 +9,7 @@ A proof-of-concept solution for the **Julius Baer RiskON 2025 Challenge**. This 
 
 ## 1. Challenge Overview
 
-The core challenge is to improve the **completeness and quality** of manually entered Client Contact Notes. High-quality CCNs are critical for regulatory adherence, documenting client interactions, and proving reverse solicitation.
+The core challenge is to improve the **completeness and quality** of manually entered Client Contact Notes. High-quality CCNs are critical for regulatory compliance, documenting client interactions, and proving reverse solicitation.
 
 **Key Pain Points Addressed:**
 * **Incompleteness:** Notes often miss one of the "5 Ws" (Who, What, Why, Where, When).
