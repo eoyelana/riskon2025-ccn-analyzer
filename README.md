@@ -1,8 +1,11 @@
 # RiskON 2025: AI-Powered Client Contact Note Analyzer
 
-A proof-of-concept solution for the **Julius Baer RiskON 2025 Challenge**. This project leverages a local, open-source Large Language Model (LLM) to provide real-time quality assurance for manually created Client Contact Notes (CCNs).
+A proof-of-concept solution for the **Julius Baer RiskON 2025 Challenge**. This project leverages AI-powered language models to provide real-time quality assurance for manually created Client Contact Notes (CCNs). While the solution is flexible and can work with various LLM providers, we have implemented it using **Perplexity's Sonar API** due to its availability and ease of access for personal use and testing.
 
-![AI Contact Note Analyzer Banner](./assets/licensed-image.jpeg)
+<p align="center">
+  <img src="./assets/licensed-image.jpeg" alt="AI Contact Note Analyzer Banner" width="600" heignt="300">
+</p>
+
 
 ## 1. Challenge Overview
 
@@ -22,24 +25,26 @@ We have developed a lightweight, secure API that analyzes a CCN and returns a st
 ### Key Features
 * **5 Ws Completeness Check:** Systematically verifies the presence of all five required components.
 * **Quality Assessment:** Evaluates the depth and clarity of the note, providing actionable suggestions.
+* **Reverse Solicitation Detection:** Identifies potential solicitation risks and provides compliance guidance.
+* **CCN Type Classification:** Automatically categorizes notes (Portfolio Review, Account Opening, Complaint, etc.).
 * **API-First Design:** Built with FastAPI for easy integration into any front-end or CRM system.
-* **Secure & Offline:** Runs **100% locally** using the open-source Gemma LLM. No client data ever leaves the bank's infrastructure.
 * **Developer Friendly:** Adheres to modern coding standards, including `black` formatting and `ruff` linting.
 
 ## 3. Tech Stack
 
-This project is built entirely on open-source components that are approved for commercial use, meeting all technical requirements of the challenge.
+This project is built on modern, production-ready components that meet all technical requirements of the challenge.
 
 | Component      | Technology                               | Purpose                                      |
 | -------------- | ---------------------------------------- | -------------------------------------------- |
 | **Language** | Python 3.9+                              | Core application logic.                      |
-| **AI / LLM** | Google Gemma 2B-IT                       | Natural Language Processing & Analysis.      |
-| **AI Framework** | Hugging Face `transformers` & `accelerate` | To run the LLM efficiently on local hardware. |
+| **AI / LLM** | Perplexity Sonar Pro                     | Natural Language Processing & Analysis.      |
+| **API Client** | OpenAI SDK                               | For Perplexity API compatibility.            |
 | **API Framework**| FastAPI                                  | To expose the analysis logic as a REST API.  |
 | **Server** | Uvicorn                                  | High-performance ASGI server.                |
 | **Container** | Docker                                   | For packaging the app for K8s deployment.    |
 | **Code Quality** | Black, Ruff                              | Linting and code formatting.                 |
 | **Testing** | Pytest                                   | For writing unit and integration tests.      |
+| **Environment** | python-dotenv                            | Secure API key management.                   |
 
 ## 4. Getting Started
 
@@ -69,11 +74,22 @@ Follow these instructions to set up and run the project locally on your machine.
     pip install -r requirements.txt
     ```
 
-4.  **Download the LLM (One-time step):**
-    This script downloads the Gemma model from Hugging Face and saves it locally. This requires ~5GB of disk space.
-    ```bash
-    python download_model.py
+4.  **Configure your API key:**
+    
+    The repository includes a `.env.template` file for easy setup. Simply:
+    
+    a. Copy the template file:
     ```
+    cp .env.template .env
+    ```
+    
+    b. Open the `.env` file and add your Perplexity API key:
+    ```
+    PERPLEXITY_API_KEY="your_api_key_here"
+    ```
+    
+    **Note:** The `.env` file is included in `.gitignore` to protect your sensitive credentials.
+
 
 ### Running the API
 
@@ -106,33 +122,37 @@ The API will return a JSON object with the analysis, highlighting missing detail
 
 ```json
 {
-  "analysis": {
-    "who": {
-      "status": "Partial",
-      "justification": "Mentions 'Sabrina' and 'Mr Martin', but does not include full names or roles (e.g., AH, POA) or the RM's name."
-    },
-    "what": {
-      "status": "Partial",
-      "justification": "Mentions discussing the portfolio and a concentration risk in Nvidia, but lacks specifics like the percentage of exposure."
-    },
-    "why": {
-      "status": "Partial",
-      "justification": "States Sabrina is 'fine for now' but does not capture her explicit rationale for accepting the risk."
-    },
-    "when": {
-      "status": "No",
-      "justification": "The date and time of the call are not mentioned in the note."
-    },
-    "where": {
-      "status": "No",
-      "justification": "The note does not specify the communication channel (e.g., Telephone) or the location of the client (e.g., Spain)."
-    }
+  "sme_judgement": "Poor example",
+  "sme_comments": [
+    "The CCN lacks sufficient detail for audit and compliance purposes. Key information is missing or ambiguous: participant roles are not fully specified, the business context and decision rationale are minimal, and the location, channel, and timing of the interaction are not documented. The note does not explain how the client was informed of the risks or how the decision to accept concentration risk was reached. There is no documentation of whether the discussion was at the client's initiative or if any advice was given, which is critical for reverse solicitation and cross-border compliance."
+  ],
+  "completeness": {
+    "who": "Partially complete",
+    "what": "Partially complete",
+    "why": "Missing",
+    "where": "Missing",
+    "when": "Missing"
   },
-  "overall_quality": "Needs Improvement",
-  "suggestions": [
-    "Add the full date and time of the interaction.",
-    "Specify all participants and their roles (e.g., 'Dario Webber (RM)').",
-    "Quantify key figures, such as the exact concentration risk percentage.",
-    "Document the client's specific reason for their decision."
+  "ccn_type": "Portfolio Review",
+  "possible_solicitation": {
+    "value": true,
+    "reason": "The note does not clarify whether the discussion of concentration risk in Nvidia was initiated by the client or if the RM provided advice or recommendations. This ambiguity creates solicitation risk, especially if the RM initiated the call or discussion.",
+    "rm_next_action": "Add a statement clarifying the origin of the discussion, e.g., 'At the client's exclusive request, we discussed the concentration risk in Nvidia.' If the RM provided advice, document the client's request for such advice and the rationale for accepting the risk."
+  },
+  "missing_info": [
+    "List all participants and their roles (e.g., 'Sabrina (POA)', 'Mr Martin (AH)', 'RM').",
+    "Specify the business context: what specific portfolio issues, risks, or decisions were discussed beyond 'concentration risk in Nvidia'.",
+    "Document the client's rationale for accepting the risk and how the decision was reached.",
+    "Record the location (country, city), communication channel (e.g., phone, email), and whether cross-border rules apply.",
+    "Include the date and time of the interaction.",
+    "Clarify whether the discussion was at the client's initiative (reverse solicitation) or if the RM initiated the topic."
+  ],
+  "follow_up_questions": [
+    "Who participated in the call? Please specify all names and roles.",
+    "What specific topics, risks, or decisions were discussed regarding the portfolio?",
+    "What was the client's rationale for accepting the concentration risk in Nvidia? How was this risk explained and discussed?",
+    "Where did the interaction take place (country, city), and what channel was used (phone, email, etc.)?",
+    "When did the interaction occur (date and time)?",
+    "Did the client request this discussion, or did the RM initiate it? Please clarify to address reverse solicitation risk."
   ]
 }
