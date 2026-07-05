@@ -1,0 +1,31 @@
+{
+  "sme_judgement": "Needs Improvement",
+  "sme_comments": [
+    "The Client Contact Note (CCN) is missing key details to fully assess completeness and quality. Additional information is required to determine if there are any reverse solicitation or cross-border risks."
+  ],
+  "completeness": {
+    "who": "Partially complete",
+    "what": "Partially complete",
+    "why": "Missing",
+    "where": "Complete",
+    "when": "Missing"
+  },
+  "ccn_type": "Investment Product Recommendation",
+  "possible_solicitation": {
+    "value": false,
+    "reason": "The note indicates the interaction was initiated by the Account Holder, which suggests it was a reverse solicitation. However, more details are needed to confirm this.",
+    "rm_next_action": "Obtain and document the client's explicit request for the advisory session, including the specific topics discussed and any investment recommendations provided. Ensure the rationale for the recommendations is clearly explained."
+  },
+  "missing_info": [
+    "Who - the specific participants and their roles (e.g., Account Holder, RM, etc.)",
+    "What - the specific investment topics discussed and any recommendations made",
+    "Why - the client's rationale for the decisions made during the advisory session",
+    "When - the date and time of the interaction"
+  ],
+  "follow_up_questions": [
+    "What were the specific investment topics discussed and any recommendations made during the advisory session?",
+    "What was the client's rationale for the decisions made during the advisory session?",
+    "When did the advisory session take place?"
+  ],
+  "suggested_ccn": "On [DATE] at [TIME], I, [RM NAME] (RM), had a phone call with [CLIENT NAME] (Account Holder). The purpose of the call was to conduct an [ADVISORY SESSION]. During the session, we discussed [INVESTMENT TOPICS] and I provided [RECOMMENDATIONS]. The client's rationale for the decisions made was [RATIONALE]. [ADD ADDITIONAL DETAILS ON HOW THE DECISION WAS REACHED, RISKS DISCLOSED, AND CLIENT'S UNDERSTANDING]."
+}

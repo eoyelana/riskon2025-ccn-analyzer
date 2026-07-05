@@ -1,0 +1,30 @@
+{
+  "sme_judgement": "Needs Improvement",
+  "sme_comments": [
+    "The CCN is missing key details to fully assess the interaction and potential solicitation risk. More information is needed to determine the completeness of the Five Ws and the quality of the decision rationale."
+  ],
+  "completeness": {
+    "who": "Partially complete",
+    "what": "Partially complete",
+    "why": "Missing",
+    "where": "Partially complete",
+    "when": "Missing"
+  },
+  "ccn_type": "Investment Product Recommendation",
+  "possible_solicitation": {
+    "value": true,
+    "reason": "The CCN does not clearly indicate whether the client requested this specific investment product or if the RM proactively recommended it. More details are needed to determine if this was a reverse solicitation interaction.",
+    "rm_next_action": "Obtain written confirmation from the client that they explicitly requested this specific investment product, including the rationale for their decision. Document the full Five Ws and the 'how the decision came to be' in a revised CCN."
+  },
+  "missing_info": [
+    "Who: Specific names and roles of all participants (e.g., AH, RM, IA, etc.)",
+    "When: Date and time of the interaction",
+    "Why: Detailed rationale for the client's decision to purchase the recommended investment product"
+  ],
+  "follow_up_questions": [
+    "What were the specific features and risks of the 'mini future Turbo call illimited on SOITEC' product that were discussed with the client?",
+    "How did the client's investment objectives, risk tolerance, and current portfolio align with the recommended product?",
+    "What alternative products or strategies were considered, and why was this specific product selected?"
+  ],
+  "suggested_ccn": "On [ADD DATE AND TIME], [ADD CLIENT NAME (AH)] instructed [ADD RM NAME] to purchase a 'mini future Turbo call illimited on SOITEC'. [ADD RM NAME] discussed the features, risks, and suitability of this product with the client, including [ADD PRODUCT DETAILS AND RATIONALE]. The client's decision to proceed with this investment was based on [ADD CLIENT RATIONALE AND DECISION PROCESS]. This interaction was initiated by the client and occurred across borders, as the client is domiciled in [ADD CLIENT COUNTRY] and the RM is located in [ADD RM COUNTRY]."
+}
